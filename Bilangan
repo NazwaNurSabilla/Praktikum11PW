@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    pertambahan <br/>
+		<input type="text" name="nilai" id="nilai1"><br/>
+		+ <br/>
+		<input type="text" name="nilai" id="nilai2"><br/><br/>
+		<input type="submit" onclick="jumlah()" value="Tambahkan">
+		<p id="isi"></p>
+ 
+		<script type="text/javascript">
+		function jumlah(){
+ 
+			var satu = document.getElementById('nilai1').value; 
+			var dua = document.getElementById('nilai2').value;
+			var total = parseInt(satu) + parseInt(dua);
+			document.getElementById('isi').innerHTML = " Hasilnya adalah " +  total;
+		}
+		
+	</script>
+</body>
+</html>
